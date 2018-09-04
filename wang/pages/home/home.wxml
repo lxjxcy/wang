@@ -1,0 +1,12 @@
+<!--pages/hviewome/home.wxml-->
+<view class='container'>
+  <view class='aheader'>
+    <view>{{title}}</view>
+    <view class='auther'>{{auther}}<text class='day'>{{time}}</text></view>
+    <view class="enjoy"><button open-type='share'><text class='iconfont icon-fenxiang1'></text></button></view>
+      <view class='agree'><text class='iconfont icon-xinaixin' style="color:{{color}};"bindtap='changecolor'></text>{{getagress}}</view>
+  </view>
+  <view class='main'>
+     <view>{{content}}<text class='getmore' bindtap="getmore" wx:if="{{show}}">...加载更多</text></view>   
+  </view>
+</view>
